@@ -1,0 +1,16 @@
+c:\users\administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Debug\AutoZhenJiu.exe
+c:\users\administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Debug\AutoZhenJiu.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.FormAuto.resources
+c:\users\administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.FormManual.resources
+c:\users\administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.exe
+c:\users\administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.FormConfig.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.FormMR.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Debug\AutoZhenJiu.exe.config
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Debug\AutoZhenJiu.FormSysParam.resources

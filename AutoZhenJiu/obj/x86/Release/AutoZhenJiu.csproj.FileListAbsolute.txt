@@ -1,0 +1,72 @@
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AutoZhenJiu.exe.config
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.exe
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.pdb
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormAuto.resources
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormConfig.resources
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormManual.resources
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormMR.resources
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.Properties.Resources.resources
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.csproj.GenerateResource.Cache
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AutoZhenJiu.exe
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AutoZhenJiu.pdb
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Newtonsoft.Json.pdb
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Newtonsoft.Json.xml
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\System.Data.SQLite.DLL
+C:\Users\Administrator.WIN7U-20140131O\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\System.Data.SQLite.xml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AutoZhenJiu.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\Interop.WMPLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AxInterop.WMPLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.csproj.ResolveComReference.cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AutoZhenJiu.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AutoZhenJiu.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Newtonsoft.Json.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\System.Data.SQLite.DLL
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Newtonsoft.Json.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Newtonsoft.Json.xml
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\System.Data.SQLite.xml
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Interop.WMPLib.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AxInterop.WMPLib.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormEditMR.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormAuto.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormConfig.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormManual.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormMission.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormMR.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormCommParam.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormHint.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormPassword.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormWelcome.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.Properties.Resources.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.csproj.GenerateResource.Cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.pdb
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AutoZhenJiu.exe.config
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\Interop.WMPLib.dll
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AxInterop.WMPLib.dll
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.csproj.ResolveComReference.cache
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.exe
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.pdb
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AutoZhenJiu.exe
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AutoZhenJiu.pdb
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Newtonsoft.Json.dll
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\System.Data.SQLite.DLL
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Newtonsoft.Json.pdb
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Newtonsoft.Json.xml
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\System.Data.SQLite.xml
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\Interop.WMPLib.dll
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\bin\Release\AxInterop.WMPLib.dll
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.csprojResolveAssemblyReference.cache
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormEditMR.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormAuto.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormConfig.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormManual.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormMission.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormMR.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormCommParam.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormHint.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormPassword.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.FormWelcome.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.Properties.Resources.resources
+D:\source-code\windows\Projects\AutoZhenJiu\AutoZhenJiu\obj\x86\Release\AutoZhenJiu.csproj.GenerateResource.Cache
