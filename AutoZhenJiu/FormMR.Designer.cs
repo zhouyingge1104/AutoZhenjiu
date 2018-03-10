@@ -42,12 +42,27 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.gbxBaseInfo = new System.Windows.Forms.GroupBox();
+            this.panelPhone = new System.Windows.Forms.Panel();
+            this.rbPhone = new System.Windows.Forms.RadioButton();
+            this.tbxPhoneNo = new System.Windows.Forms.TextBox();
+            this.panelIdCard = new System.Windows.Forms.Panel();
+            this.tbxIdCardNo = new System.Windows.Forms.TextBox();
+            this.rbIdCard = new System.Windows.Forms.RadioButton();
             this.btnReadCard = new System.Windows.Forms.Button();
             this.lblMsgQueryClient = new System.Windows.Forms.Label();
             this.cbxGender = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnGetClientInfo = new System.Windows.Forms.Button();
-            this.tbxIdCardNo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbxHeight = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbxWeight = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbxAge = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbxName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbxZhenJiu = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.cbxb8 = new System.Windows.Forms.CheckBox();
@@ -69,17 +84,6 @@
             this.cbxf1 = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbxHeight = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbxWeight = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbxAge = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbxName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblCRUDStatus = new System.Windows.Forms.Label();
             this.btnAddMR = new System.Windows.Forms.Button();
@@ -116,6 +120,8 @@
             this.colDoctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLoadParamDFT = new System.Windows.Forms.Button();
             this.gbxBaseInfo.SuspendLayout();
+            this.panelPhone.SuspendLayout();
+            this.panelIdCard.SuspendLayout();
             this.gbxZhenJiu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -157,14 +163,13 @@
             // 
             // gbxBaseInfo
             // 
+            this.gbxBaseInfo.Controls.Add(this.panelPhone);
+            this.gbxBaseInfo.Controls.Add(this.panelIdCard);
             this.gbxBaseInfo.Controls.Add(this.btnReadCard);
             this.gbxBaseInfo.Controls.Add(this.lblMsgQueryClient);
             this.gbxBaseInfo.Controls.Add(this.cbxGender);
             this.gbxBaseInfo.Controls.Add(this.label10);
             this.gbxBaseInfo.Controls.Add(this.btnGetClientInfo);
-            this.gbxBaseInfo.Controls.Add(this.tbxIdCardNo);
-            this.gbxBaseInfo.Controls.Add(this.gbxZhenJiu);
-            this.gbxBaseInfo.Controls.Add(this.label7);
             this.gbxBaseInfo.Controls.Add(this.label6);
             this.gbxBaseInfo.Controls.Add(this.label5);
             this.gbxBaseInfo.Controls.Add(this.tbxHeight);
@@ -182,6 +187,70 @@
             this.gbxBaseInfo.TabIndex = 5;
             this.gbxBaseInfo.TabStop = false;
             this.gbxBaseInfo.Text = "基本信息";
+            // 
+            // panelPhone
+            // 
+            this.panelPhone.Controls.Add(this.rbPhone);
+            this.panelPhone.Controls.Add(this.tbxPhoneNo);
+            this.panelPhone.Location = new System.Drawing.Point(541, 19);
+            this.panelPhone.Name = "panelPhone";
+            this.panelPhone.Size = new System.Drawing.Size(230, 37);
+            this.panelPhone.TabIndex = 21;
+            // 
+            // rbPhone
+            // 
+            this.rbPhone.AutoSize = true;
+            this.rbPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPhone.Location = new System.Drawing.Point(8, 9);
+            this.rbPhone.Name = "rbPhone";
+            this.rbPhone.Size = new System.Drawing.Size(74, 20);
+            this.rbPhone.TabIndex = 19;
+            this.rbPhone.TabStop = true;
+            this.rbPhone.Text = "手机号";
+            this.rbPhone.UseVisualStyleBackColor = true;
+            // 
+            // tbxPhoneNo
+            // 
+            this.tbxPhoneNo.BackColor = System.Drawing.Color.White;
+            this.tbxPhoneNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxPhoneNo.Location = new System.Drawing.Point(85, 7);
+            this.tbxPhoneNo.Name = "tbxPhoneNo";
+            this.tbxPhoneNo.Size = new System.Drawing.Size(134, 22);
+            this.tbxPhoneNo.TabIndex = 17;
+            // 
+            // panelIdCard
+            // 
+            this.panelIdCard.BackColor = System.Drawing.Color.SandyBrown;
+            this.panelIdCard.Controls.Add(this.tbxIdCardNo);
+            this.panelIdCard.Controls.Add(this.rbIdCard);
+            this.panelIdCard.Location = new System.Drawing.Point(148, 19);
+            this.panelIdCard.Name = "panelIdCard";
+            this.panelIdCard.Size = new System.Drawing.Size(373, 37);
+            this.panelIdCard.TabIndex = 20;
+            // 
+            // tbxIdCardNo
+            // 
+            this.tbxIdCardNo.BackColor = System.Drawing.Color.White;
+            this.tbxIdCardNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxIdCardNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxIdCardNo.Location = new System.Drawing.Point(102, 7);
+            this.tbxIdCardNo.Name = "tbxIdCardNo";
+            this.tbxIdCardNo.Size = new System.Drawing.Size(261, 22);
+            this.tbxIdCardNo.TabIndex = 11;
+            // 
+            // rbIdCard
+            // 
+            this.rbIdCard.AutoSize = true;
+            this.rbIdCard.Checked = true;
+            this.rbIdCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbIdCard.Location = new System.Drawing.Point(9, 9);
+            this.rbIdCard.Name = "rbIdCard";
+            this.rbIdCard.Size = new System.Drawing.Size(90, 20);
+            this.rbIdCard.TabIndex = 18;
+            this.rbIdCard.TabStop = true;
+            this.rbIdCard.Text = "身份证号";
+            this.rbIdCard.UseVisualStyleBackColor = true;
             // 
             // btnReadCard
             // 
@@ -201,7 +270,7 @@
             this.lblMsgQueryClient.AutoSize = true;
             this.lblMsgQueryClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMsgQueryClient.ForeColor = System.Drawing.Color.Blue;
-            this.lblMsgQueryClient.Location = new System.Drawing.Point(685, 29);
+            this.lblMsgQueryClient.Location = new System.Drawing.Point(790, 31);
             this.lblMsgQueryClient.Name = "lblMsgQueryClient";
             this.lblMsgQueryClient.Size = new System.Drawing.Size(12, 16);
             this.lblMsgQueryClient.TabIndex = 14;
@@ -242,15 +311,101 @@
             this.btnGetClientInfo.Text = "查询信息";
             this.btnGetClientInfo.UseVisualStyleBackColor = false;
             // 
-            // tbxIdCardNo
+            // label6
             // 
-            this.tbxIdCardNo.BackColor = System.Drawing.Color.White;
-            this.tbxIdCardNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxIdCardNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxIdCardNo.Location = new System.Drawing.Point(274, 25);
-            this.tbxIdCardNo.Name = "tbxIdCardNo";
-            this.tbxIdCardNo.Size = new System.Drawing.Size(393, 22);
-            this.tbxIdCardNo.TabIndex = 11;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(881, 74);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 16);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "KG";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(720, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(28, 16);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "CM";
+            // 
+            // tbxHeight
+            // 
+            this.tbxHeight.BackColor = System.Drawing.Color.White;
+            this.tbxHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxHeight.Location = new System.Drawing.Point(654, 71);
+            this.tbxHeight.Name = "tbxHeight";
+            this.tbxHeight.Size = new System.Drawing.Size(65, 20);
+            this.tbxHeight.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(605, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 16);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "身高：";
+            // 
+            // tbxWeight
+            // 
+            this.tbxWeight.BackColor = System.Drawing.Color.White;
+            this.tbxWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxWeight.Location = new System.Drawing.Point(807, 71);
+            this.tbxWeight.Name = "tbxWeight";
+            this.tbxWeight.Size = new System.Drawing.Size(72, 20);
+            this.tbxWeight.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(758, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "体重：";
+            // 
+            // tbxAge
+            // 
+            this.tbxAge.BackColor = System.Drawing.Color.White;
+            this.tbxAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxAge.Location = new System.Drawing.Point(523, 70);
+            this.tbxAge.Name = "tbxAge";
+            this.tbxAge.Size = new System.Drawing.Size(58, 20);
+            this.tbxAge.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(474, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "年龄：";
+            // 
+            // tbxName
+            // 
+            this.tbxName.BackColor = System.Drawing.Color.White;
+            this.tbxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxName.Location = new System.Drawing.Point(194, 71);
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(112, 20);
+            this.tbxName.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(145, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "姓名：";
             // 
             // gbxZhenJiu
             // 
@@ -259,7 +414,7 @@
             this.gbxZhenJiu.Controls.Add(this.label9);
             this.gbxZhenJiu.Controls.Add(this.label8);
             this.gbxZhenJiu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gbxZhenJiu.Location = new System.Drawing.Point(494, 8);
+            this.gbxZhenJiu.Location = new System.Drawing.Point(10, 498);
             this.gbxZhenJiu.Name = "gbxZhenJiu";
             this.gbxZhenJiu.Size = new System.Drawing.Size(28, 15);
             this.gbxZhenJiu.TabIndex = 6;
@@ -544,112 +699,6 @@
             this.label8.Size = new System.Drawing.Size(38, 16);
             this.label8.TabIndex = 1;
             this.label8.Text = "正面";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(145, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(132, 16);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "身份证号/手机号：";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(881, 74);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 16);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "KG";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(720, 74);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 16);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "CM";
-            // 
-            // tbxHeight
-            // 
-            this.tbxHeight.BackColor = System.Drawing.Color.White;
-            this.tbxHeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxHeight.Location = new System.Drawing.Point(654, 71);
-            this.tbxHeight.Name = "tbxHeight";
-            this.tbxHeight.Size = new System.Drawing.Size(65, 20);
-            this.tbxHeight.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(605, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 16);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "身高：";
-            // 
-            // tbxWeight
-            // 
-            this.tbxWeight.BackColor = System.Drawing.Color.White;
-            this.tbxWeight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxWeight.Location = new System.Drawing.Point(807, 71);
-            this.tbxWeight.Name = "tbxWeight";
-            this.tbxWeight.Size = new System.Drawing.Size(72, 20);
-            this.tbxWeight.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(758, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "体重：";
-            // 
-            // tbxAge
-            // 
-            this.tbxAge.BackColor = System.Drawing.Color.White;
-            this.tbxAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxAge.Location = new System.Drawing.Point(523, 70);
-            this.tbxAge.Name = "tbxAge";
-            this.tbxAge.Size = new System.Drawing.Size(58, 20);
-            this.tbxAge.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(474, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "年龄：";
-            // 
-            // tbxName
-            // 
-            this.tbxName.BackColor = System.Drawing.Color.White;
-            this.tbxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbxName.Location = new System.Drawing.Point(194, 71);
-            this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(112, 20);
-            this.tbxName.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(145, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "姓名：";
             // 
             // label11
             // 
@@ -1042,6 +1091,7 @@
             this.Controls.Add(this.gbxBaseInfo);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.gbxZhenJiu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1049,6 +1099,10 @@
             this.Load += new System.EventHandler(this.FormMR_Load);
             this.gbxBaseInfo.ResumeLayout(false);
             this.gbxBaseInfo.PerformLayout();
+            this.panelPhone.ResumeLayout(false);
+            this.panelPhone.PerformLayout();
+            this.panelIdCard.ResumeLayout(false);
+            this.panelIdCard.PerformLayout();
             this.gbxZhenJiu.ResumeLayout(false);
             this.gbxZhenJiu.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -1085,7 +1139,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbxIdCardNo;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -1146,5 +1199,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.Button btnLoadParamDFT;
         private System.Windows.Forms.Button btnReadCard;
+        private System.Windows.Forms.TextBox tbxPhoneNo;
+        private System.Windows.Forms.Panel panelPhone;
+        private System.Windows.Forms.RadioButton rbPhone;
+        private System.Windows.Forms.Panel panelIdCard;
+        private System.Windows.Forms.RadioButton rbIdCard;
     }
 }

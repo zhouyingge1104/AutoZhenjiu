@@ -16,6 +16,7 @@ namespace AutoZhenJiu.entity
         public string addTime;
         public string param;
         public int age;
+        public string phoneNo;
 
         public Client()
         {
@@ -28,6 +29,7 @@ namespace AutoZhenJiu.entity
             addTime = "";
             param = "";
             age = 1;
+            phoneNo = "";
         }
 
     }

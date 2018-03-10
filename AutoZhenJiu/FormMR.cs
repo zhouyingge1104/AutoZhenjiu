@@ -64,6 +64,9 @@ namespace AutoZhenJiu
 
             tbcParam.SelectedIndexChanged += new EventHandler(changeTab);
 
+            rbIdCard.Click += new EventHandler(changeNoType);
+            rbPhone.Click += new EventHandler(changeNoType);
+
         }
 
         /// <summary>
@@ -162,6 +165,7 @@ namespace AutoZhenJiu
             if (client != null)
             {
                 tbxIdCardNo.Text = client.idCardNo;
+                tbxPhoneNo.Text = client.phoneNo;
                 tbxName.Text = client.name;
                 tbxAge.Text = client.age + "";
                 tbxHeight.Text = client.height;
@@ -410,6 +414,10 @@ namespace AutoZhenJiu
         /// </summary>
         public void readCard(object sender, EventArgs e)
         {
+            //不管能否读出，界面先切换
+            rbIdCard.Checked = true; panelIdCard.BackColor = Color.SandyBrown;
+            rbPhone.Checked = false; panelPhone.BackColor = Color.Transparent;
+
             try
             {
                 if ((iRetCOM == 1) || (iRetUSB == 1))
@@ -445,12 +453,36 @@ namespace AutoZhenJiu
             }
         }
 
+         /// <summary>
+        /// 切换号码类型
+        /// </summary>
+        public void changeNoType(object sender, EventArgs e)
+        {
+            RadioButton rb = (RadioButton)sender;
+            if(rb == rbIdCard){
+                rbIdCard.Checked = true; panelIdCard.BackColor = Color.SandyBrown;
+                rbPhone.Checked = false; panelPhone.BackColor = Color.Transparent;
+            }
+            if (rb == rbPhone)
+            {
+                rbIdCard.Checked = false; panelIdCard.BackColor = Color.Transparent;
+                rbPhone.Checked = true; panelPhone.BackColor = Color.SandyBrown;
+            }
+        }
+
         /// <summary>
         /// 根据身份证号查询客户信息
         /// </summary>
         public void getClientInfo(object sender, EventArgs e)
         {
-            client = db.getClientByIdCardNo(tbxIdCardNo.Text.Trim());
+            if(rbIdCard.Checked){
+                client = db.getClientByIdCardNo(tbxIdCardNo.Text.Trim());
+            }
+            if (rbPhone.Checked)
+            {
+                client = db.getClientByPhoneNo(tbxPhoneNo.Text.Trim());
+            }
+
             if(client != null){
                 initUI();
                 lblMsgQueryClient.Text = DateTime.Now.ToString("HH:mm:ss") + " √";
@@ -494,7 +526,14 @@ namespace AutoZhenJiu
             if(!checkFormat()){ return; }
             string msg = "";
             //1. 判断该身份证号在系统中是否已存在？
-            client = db.getClientByIdCardNo(tbxIdCardNo.Text.Trim());
+            if(rbIdCard.Checked){
+                client = db.getClientByIdCardNo(tbxIdCardNo.Text.Trim());
+            }
+            if (rbPhone.Checked)
+            {
+                client = db.getClientByPhoneNo(tbxPhoneNo.Text.Trim());
+            }
+            
 
             string addTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
@@ -510,6 +549,7 @@ namespace AutoZhenJiu
             client.height = tbxHeight.Text.Trim();
             client.weight = tbxWeight.Text.Trim();
             client.idCardNo = tbxIdCardNo.Text.Trim();
+            client.phoneNo = tbxPhoneNo.Text.Trim();
             client.addTime = addTime;
 
             client.param = makeParamContent();
@@ -758,12 +798,27 @@ namespace AutoZhenJiu
             if (!Double.TryParse(tbxHeight.Text, out x)) { MessageBox.Show("身高数据有误，请修正"); return false; }
             if (!Double.TryParse(tbxWeight.Text, out x)) { MessageBox.Show("体重数据有误，请修正"); return false; }
             //身份证号：15位（数字）或18位（17位数字+第18位数字或X）, 整体匹配的话首尾加\A和\z
-            string regexIdCard = @"\A[1-9]\d{14}(\d{2}[0-9X])*\z";
-            string regexMobile = "^1[34578]\\d{9}$";
-            if (!Regex.IsMatch(tbxIdCardNo.Text.Trim(), regexIdCard)  &&  !Regex.IsMatch(tbxIdCardNo.Text.Trim(), regexMobile))
-            {
-                MessageBox.Show("身份证号/手机号有误，请修正"); return false; 
+
+            string regex = "";
+            if(rbIdCard.Checked){
+                regex = @"\A[1-9]\d{14}(\d{2}[0-9X])*\z";
+                if (!Regex.IsMatch(tbxIdCardNo.Text.Trim(), regex))
+                {
+                    MessageBox.Show("身份证号有误，请修正"); return false;
+                }
             }
+
+            if (rbPhone.Checked)
+            {
+                regex = "^1[34578]\\d{9}$";
+                if (!Regex.IsMatch(tbxPhoneNo.Text.Trim(), regex))
+                {
+                    MessageBox.Show("手机号有误，请修正"); return false;
+                }
+            }
+
+
+           
 
             //穴位参数
 
@@ -1001,6 +1056,7 @@ namespace AutoZhenJiu
             */
 
             //V1  18.2.21 t_client表增加字段：“性别”，同时更新之前未设置过性别字段的记录
+            /*
             sql = "alter table t_client add column gender varchar(5);";
             try { db.execute(sql); } catch (Exception ex) { Console.WriteLine("更新数据库出错：" + ex.Message); }
 
@@ -1027,7 +1083,26 @@ namespace AutoZhenJiu
             sql = "update t_client set age = 1 where age is null;";
             try { db.execute(sql); }
             catch (Exception ex) { Console.WriteLine("更新数据库出错：" + ex.Message); }
+            */
 
+            //V4 18.3.10 t_client
+            sql = "alter table t_client add column phoneNo varchar(15);";
+            try { 
+                db.execute(sql); 
+                sql = "update t_client set phoneNo = '' where phoneNo is null";
+                db.execute(sql); 
+            }
+            catch (Exception ex) { 
+                Console.WriteLine("更新数据库出错：" + ex.Message);
+                try {
+                    sql = "update t_client set phoneNo = '' where phoneNo is null";
+                    db.execute(sql); 
+                }
+                catch (Exception ex2)
+                {
+                    Console.WriteLine("填充数据出错：" + ex2.Message);
+                }
+            }
         }
 
        

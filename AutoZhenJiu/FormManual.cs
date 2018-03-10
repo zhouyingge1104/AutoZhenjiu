@@ -622,6 +622,9 @@ namespace AutoZhenJiu
         {
             if (sender.Equals(btnFan0))
             {
+                btnFan1.BackColor = Color.FromArgb(42, 87, 154);
+                btnFan2.BackColor = Color.FromArgb(42, 87, 154);
+
                 byte[] Z9_0 = ORDER.Z9; Z9_0[5] = 0x00; send(Z9_0, 9, ORDER.L9);
              }
              if (sender.Equals(btnFan1))
@@ -699,9 +702,6 @@ namespace AutoZhenJiu
 
         public void order19(object sender, EventArgs e) { 
             send(ORDER.Z19, 19, ORDER.L16); 
-
-            btnFan1.BackColor = Color.FromArgb(42, 87, 154);
-            btnFan2.BackColor = Color.FromArgb(42, 87, 154);
         }
 
         /// <summary>

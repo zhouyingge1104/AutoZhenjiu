@@ -46,6 +46,7 @@ namespace AutoZhenJiu.database
                     obj.gender = reader.GetString(6);
                     obj.param = reader.GetString(7);
                     obj.age = reader.GetInt32(8);
+                    obj.phoneNo = reader.GetString(9);
 
                     objs.Add(obj);
                 }
@@ -61,6 +62,8 @@ namespace AutoZhenJiu.database
         /// </summary>
         public Client getClientByIdCardNo(string idCardNo)
         {
+            Console.WriteLine("BY_IDCARD_NO");
+
             SQLiteCommand cmd = new SQLiteCommand();
             cmd.Connection = this.conn;
             string sql = "select * from t_client where idCardNo = '" + idCardNo + "'";
@@ -81,6 +84,45 @@ namespace AutoZhenJiu.database
                 obj.gender = reader.GetString(6);
                 obj.param = reader.GetString(7);
                 obj.age = reader.GetInt32(8);
+                obj.phoneNo = reader.GetString(9);
+
+                return obj;
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
+        /// <summary>
+        /// 根据身份证号查询客户
+        /// </summary>
+        public Client getClientByPhoneNo(string phoneNo)
+        {
+            Console.WriteLine("BY_PHONE_NO");
+
+            SQLiteCommand cmd = new SQLiteCommand();
+            cmd.Connection = this.conn;
+            string sql = "select * from t_client where phoneNo = '" + phoneNo + "'";
+            cmd.CommandText = sql;
+            SQLiteDataReader reader = cmd.ExecuteReader();
+            List<Client> objs = new List<Client>();
+            if (reader.HasRows)
+            {
+                reader.Read();
+
+                Client obj = new Client();
+                obj.id = reader.GetInt32(0);
+                obj.name = reader.GetString(1);
+                obj.height = reader.GetString(2);
+                obj.weight = reader.GetString(3);
+                obj.idCardNo = reader.GetString(4);
+                obj.addTime = reader.GetString(5);
+                obj.gender = reader.GetString(6);
+                obj.param = reader.GetString(7);
+                obj.age = reader.GetInt32(8);
+                obj.phoneNo = reader.GetString(9);
 
                 return obj;
             }
@@ -116,6 +158,7 @@ namespace AutoZhenJiu.database
                 obj.gender = reader.GetString(6);
                 obj.param = reader.GetString(7);
                 obj.age = reader.GetInt32(8);
+                obj.phoneNo = reader.GetString(9);
 
                 return obj;
             }
@@ -133,7 +176,7 @@ namespace AutoZhenJiu.database
         {
             SQLiteCommand cmd = new SQLiteCommand();
             cmd.Connection = this.conn;
-            string sql = "insert into t_client (name, height, weight, idCardNo, addTime, gender, param, age) values ('" + client.name + "', '" + client.height + "', '" + client.weight + "', '" + client.idCardNo + "','" + client.addTime +"','" + client.gender + "','" + client.param + "'," + client.age + ")";
+            string sql = "insert into t_client (name, height, weight, idCardNo, addTime, gender, param, age, phoneNo) values ('" + client.name + "', '" + client.height + "', '" + client.weight + "', '" + client.idCardNo + "','" + client.addTime + "','" + client.gender + "','" + client.param + "'," + client.age + ",'" + client.phoneNo + "')";
             Console.WriteLine("sql:" + sql);
             cmd.CommandText = sql;
             int effictedNum = cmd.ExecuteNonQuery();
@@ -155,7 +198,7 @@ namespace AutoZhenJiu.database
         {
             SQLiteCommand cmd = new SQLiteCommand();
             cmd.Connection = this.conn;
-            string sql = "update t_client set name = '" + client.name +  "', height = '" + client.height + "', weight = '" + client.weight + "', idCardNo = '" + client.idCardNo + "', gender = '" + client.gender + "', param = '" + client.param + "', age = " + client.age + " where id = " + client.id;
+            string sql = "update t_client set name = '" + client.name +  "', height = '" + client.height + "', weight = '" + client.weight + "', idCardNo = '" + client.idCardNo + "', gender = '" + client.gender + "', param = '" + client.param + "', age = " + client.age + ", phoneNo = '" + client.phoneNo + "' where id = " + client.id;
             Console.WriteLine("sql:" + sql);
             cmd.CommandText = sql;
             int effictedNum = cmd.ExecuteNonQuery();

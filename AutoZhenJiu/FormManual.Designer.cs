@@ -704,7 +704,6 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.btnFan3);
             this.panel7.Controls.Add(this.btnFan2);
             this.panel7.Controls.Add(this.btnFan1);
             this.panel7.Controls.Add(this.btnFan0);
@@ -719,7 +718,7 @@
             this.btnFan3.FlatAppearance.BorderSize = 0;
             this.btnFan3.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnFan3.ForeColor = System.Drawing.Color.White;
-            this.btnFan3.Location = new System.Drawing.Point(357, 11);
+            this.btnFan3.Location = new System.Drawing.Point(359, 756);
             this.btnFan3.Name = "btnFan3";
             this.btnFan3.Size = new System.Drawing.Size(85, 41);
             this.btnFan3.TabIndex = 10;
@@ -733,9 +732,9 @@
             this.btnFan2.FlatAppearance.BorderSize = 0;
             this.btnFan2.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnFan2.ForeColor = System.Drawing.Color.White;
-            this.btnFan2.Location = new System.Drawing.Point(246, 11);
+            this.btnFan2.Location = new System.Drawing.Point(332, 11);
             this.btnFan2.Name = "btnFan2";
-            this.btnFan2.Size = new System.Drawing.Size(85, 41);
+            this.btnFan2.Size = new System.Drawing.Size(110, 41);
             this.btnFan2.TabIndex = 9;
             this.btnFan2.Text = "S2 快";
             this.btnFan2.UseVisualStyleBackColor = false;
@@ -746,9 +745,9 @@
             this.btnFan1.FlatAppearance.BorderSize = 0;
             this.btnFan1.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnFan1.ForeColor = System.Drawing.Color.White;
-            this.btnFan1.Location = new System.Drawing.Point(134, 11);
+            this.btnFan1.Location = new System.Drawing.Point(177, 11);
             this.btnFan1.Name = "btnFan1";
-            this.btnFan1.Size = new System.Drawing.Size(85, 41);
+            this.btnFan1.Size = new System.Drawing.Size(110, 41);
             this.btnFan1.TabIndex = 8;
             this.btnFan1.Text = "S1 慢";
             this.btnFan1.UseVisualStyleBackColor = false;
@@ -761,7 +760,7 @@
             this.btnFan0.ForeColor = System.Drawing.Color.White;
             this.btnFan0.Location = new System.Drawing.Point(22, 11);
             this.btnFan0.Name = "btnFan0";
-            this.btnFan0.Size = new System.Drawing.Size(85, 41);
+            this.btnFan0.Size = new System.Drawing.Size(110, 41);
             this.btnFan0.TabIndex = 7;
             this.btnFan0.Text = "- 停";
             this.btnFan0.UseVisualStyleBackColor = false;
@@ -785,7 +784,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(19, 886);
+            this.label5.Location = new System.Drawing.Point(26, 785);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 16);
             this.label5.TabIndex = 6;
@@ -1358,8 +1357,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1272, 885);
+            this.ClientSize = new System.Drawing.Size(1272, 949);
             this.ControlBox = false;
+            this.Controls.Add(this.btnFan3);
             this.Controls.Add(this.btnGW);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnConfigSys);
